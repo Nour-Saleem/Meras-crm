@@ -1,0 +1,91 @@
+body{
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-image: url("../images/Property\ 1=Variant2.png");
+
+}
+.login_container{
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left:2rem;
+        padding-right: 2rem;
+         height: 10rem;
+        .header_tool{
+        display: flex;
+        align-items: center;
+        .translate{
+            display: flex;
+            align-items: center;
+            span{
+                color: white;
+            }
+        }
+        
+    }
+    .logo_container{
+        width: 15rem;
+        img{
+         width: 100%;
+        }
+    }
+
+    }
+    form{
+        width: 40%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border: 0.1px solid white;
+        /* border-image-source: linear-gradient(145.93deg, rgba(244, 244, 244, 0.07) -3.66%, rgba(244, 244, 244, 0.28) 97.63%); */
+        backdrop-filter: blur(12px);
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .logo_container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+        .tittle{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            margin-top: 1rem;
+
+            #welcome{
+                font-family: Tajawal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: white;
+
+            }
+            #signin{
+                font-family: Tajawal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: white;
+
+            }
+        }
+        .form_content{
+            display: flex;
+            flex-direction: column;
+        }
+      
+    }
+   
+    
+
+}
