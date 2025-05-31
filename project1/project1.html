@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/variable.css">
+    <link rel="stylesheet" href="../project1/project1.css">
+    <script src="../project1/project1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="project_container">
+        <div class="sidebar">
+        <div class="logo-container">
+            <img src="../images/Group (2)-white.png" alt="">
+            <img src="../images/Group (1)-white.png" alt="">
+        </div>
+        <div class="owner_feedback">
+            <div class="info">
+               <div class="owner_img">
+                <img src="../images/Image_owner.png" alt="">
+               </div>
+               <div class="owner_name">
+                <span id="name">محمد جلال</span>
+                <span id="latest_update">آخر تحديث 1/1/2025</span>
+               </div>
+            </div>
+            <img src="../images/feedback.svg" alt="">
+
+            
+        </div>
+        <div class="graph_container">
+            <div class="kpi">
+                <span>KPI</span>
+            </div>
+            <div class="count">
+                <div class="month_count">
+                    <span>4.2%
+منذ شهر</span>
+            <img src="../images/Frame 1318.svg" alt="">
+                </div>
+                <div class="count_info">
+                    <span>المحقق</span>
+                    <img src="../images/icon.svg" alt="">
+                    <span>المستهدف</span>
+                </div>
+            </div>
+            <div class="percent">
+                <span>65%</span>
+            </div>
+            <div class="graph">
+                <img src="../images/graph.svg" alt="">
+            </div>
+        </div>
+       <div class="list">
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/dashboard icon.svg" alt="">
+                    <span>الرئيسية</span>
+                </div>
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/ix_project.svg" alt="" >
+                    <span>المشاريع</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="projectToggle">
+            </div>
+              <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/engineering (1) 1.svg" alt="">
+                    <span>PMO</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="PmoToggle">
+            </div>
+             <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/carbon_dashboard-reference.svg" alt="" >
+                    <span>إدارة الأملاك</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="PropertyToggle">
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/streamline_call-center-support-service.svg" alt="">
+                    <span>خدمة العملاء</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="CustomerToggle">
+            </div>
+             <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/streamline_investment-selection.svg" alt="">
+                    <span>التطوير و الاستثمار</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="developmentToggle" >
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/teenyicons_search-property-outline.svg" alt="">
+                    <span>المواد التسويقية</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="markitingToggle">
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/famicons_pricetags-outline.svg" alt="">
+                    <span>المشتريات</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="pourchaseToggle">
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/mingcute_government-line.svg" alt="">
+                    <span>المعاملات الحكومية</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="">
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/mage_dashboard-chart-arrow.svg" alt="">
+                    <span>التقارير و الإحصائيات</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="" style="cursor: pointer;" id="reportToggle">
+            </div>
+            <div class="list_item">
+                <div class="tittle">
+                    <img src="../images/lucide_settings.svg" alt="">
+                    <span>الإعدادات</span>
+                </div>
+                <img src="../images/Vector (1).svg" alt="">
+            </div>
+        </div>
+    </div>
+       <div id="project_list">
+        <div>
+            <span>سكني</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>المشاريع السكنية</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+        <div>
+            <span>المشاريع التجارية</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>المشاريع اللوجستية</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div> 
+    </div>
+    <div id="Property_list">
+        <div>
+            <span>إدارة العقارات</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>إدارة الإيجارات</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>إدارة المستأجرين</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>إدارة الصيانة</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+       
+    </div>
+    <div id="pmo_list">
+        <div>
+            <span>نسب الإنجاز</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>التقارير</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+       
+    </div>
+    <div id="customer_list">
+        <div>
+            <span>مركز الاتصالات</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>إدارة علاقات العملاء</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+       
+    </div>
+    <div id="development_list">
+        <div>
+            <span>بيانات سوق عقاري</span>
+            
+        </div>
+         <div>
+            <span>الصناديق العقارية</span>
+            
+        </div>
+         <div>
+            <span>الفرص التطويرية والاستثمارية</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+         <div>
+            <span>تأهيل المطورين</span>
+            <img src="../images/Arrow up.svg" alt="">
+        </div>
+       
+    </div>
+    <div id="markiting_list">
+        <div>
+            <span>الشركة</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>المشاريع</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+    </div>
+    <div id="Purchases_list">
+        <div>
+            <span>تأهيل الموردين</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>مواد البناء</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+        <div>
+            <span>مواد صحية</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>مواد كهربائية</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>تأهيل مقاولين</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>مقاول بنية فوقية</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>مقاول بنية تحتية</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>مقاول بنية فوقية وتحتية</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+    </div>
+     <div id="report_list">
+        <div>
+            <span>تقارير وإحصائيات العملاء</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>تقارير وإحصائيات المبيعات</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+        <div>
+            <span>تقارير وإحصائيات التأجير</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>تقارير وإحصائيات التحصيل</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>تقارير وإحصائيات التسليم</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+         <div>
+            <span>تقارير وإحصائيات نسب الإنجاز</span>
+            <img src="../images/Arrow up.svg" alt="">
+            
+        </div>
+      
+    </div>
+    <div class="left_side">
+        <div class="header">
+           <div class="header_text">
+            <span>صباح الخير, محمد</span>
+           </div>
+           <div class="header_tool">
+            
+              <label for="">
+               
+                <img src="../images/Text.svg" alt="">
+                <div class="input" >
+                    <input type="text" dir="ltr" placeholder="Search">
+                    <img src="../images/Search.svg" alt="">
+                </div>
+               </label>
+            
+            <div class="notification">
+                <img src="../images/Bell.svg" alt="">
+            </div>
+            <div class="mode">
+                <img src="../images/Icon_light.svg" alt="">
+            </div>
+           
+           </div>
+           
+        </div>
+        <div class="content">
+             <div class="tittle" style="background-color: #F9F6F6;border-radius: 16px;padding: 1rem;">
+               <div style="display: flex;flex-direction: column;width: 10rem;row-gap: 0.5rem;">
+                <img src="../images/Group (2).png" alt="" style="width:100%">
+                <span style="color: #C8A78C;" dir="ltr"> 3:00 AM  || 22 JAN 2025</span>
+               </div>
+               <div style="display: flex;align-items: center;column-gap: 2rem;">
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+                  <div style="display: flex;align-items: center;column-gap: 0.8rem;">
+                    <img src="../images/Frame 1318.svg" alt="">
+                    <span id="pkd">PKD 4.2%</span>
+                  </div>
+               </div>
+             </div>
+             <div class="list_container">
+                <div class="list_item">
+                    <img src="../images/price.svg" alt="" style="width: 2rem;">
+                    <span class="desc">عرض الأسعار</span>
+                </div>
+                 <div class="list_item" style="background-color:#884B50 ;">
+                    <img src="../images/Icon (1).svg" alt="" style="width: 2rem;">
+                    <img src="../images/vector Arrow down.svg" alt="" style="width: 1rem;margin-right: 5rem;">
+                    <span class="desc" style="color: white;">الحجز</span>
+                </div>
+                 <div class="list_item">
+                    <img src="../images/Icon (2).svg" alt="" style="width: 2rem;">
+                    <!-- <img src="../images/vector Arrow down.svg" alt="" style="width: 1rem;margin-right: 3rem;"> -->
+                    <span class="desc">تفاعلية المبيعات</span>
+                </div>
+                 <div class="list_item" >
+                    <img src="../images/Icon (3).svg" alt="" style="width: 2rem;">
+                    <img src="../images/Vector Arrow Down Black.svg" alt="" style="width: 1rem;margin-right: 5rem;">
+                    <span class="desc" >العقود</span>
+                </div>
+                <div class="list_item" >
+                    <img src="../images/Icon (4).svg" alt="" style="width: 2rem;">
+                    <img src="../images/Vector Arrow Down Black.svg" alt="" style="width: 1rem;margin-right: 5rem;">
+                    <span class="desc" >التسليم</span>
+                </div>
+                <div class="list_item" >
+                    <img src="../images/Icon (4).svg" alt="" style="width: 2rem;">
+                    <img src="../images/Vector Arrow Down Black.svg" alt="" style="width: 1rem;margin-right: 5rem;">
+                    <span class="desc" >الصيانة</span>
+                </div>
+             </div>
+        </div>
+        <div class="auto_content"></div>
+       
+    </div>
+</div>
+</body>
+</html>
