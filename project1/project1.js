@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const pourchaseToggle=document.getElementById('pourchaseToggle');
     const reportToggle=document.getElementById('reportToggle');
     const report_list=document.getElementById('report_list');
+    const BookingToggle=document.getElementById('BookingToggle');
+    const BookingList=document.getElementById('BookingList');
+    const ContractsList=document.getElementById('ContractsList');
+    const ContractsToggle=document.getElementById('ContractsToggle');
+    const DeliveryList=document.getElementById('DeliveryList');
+    const DeliveryToggle=document.getElementById('DeliveryToggle');
+    const MaintenanceList=document.getElementById('MaintenanceList');
+    const MaintenanceToggle=document.getElementById('MaintenanceToggle');
 
     projectToggle.addEventListener('click', function() {
      if (projectList.style.display === 'flex') {
@@ -79,6 +87,35 @@ document.addEventListener('DOMContentLoaded', function() {
             report_list.style.display = 'none'; // Hide if currently visible
         } else {
             report_list.style.display = 'flex'; // Show if currently hidden
+        }
+    });
+
+    BookingToggle.addEventListener('click',function(){
+         if (BookingList.style.display === 'flex') {
+            BookingList.style.display = 'none'; // Hide if currently visible
+        } else {
+            BookingList.style.display = 'flex'; // Show if currently hidden
+        }
+    });
+    ContractsToggle.addEventListener('click',function(){
+         if (ContractsList.style.display === 'flex') {
+            ContractsList.style.display = 'none'; // Hide if currently visible
+        } else {
+            ContractsList.style.display = 'flex'; // Show if currently hidden
+        }
+    });
+    DeliveryToggle.addEventListener('click',function(){
+         if (DeliveryList.style.display === 'flex') {
+            DeliveryList.style.display = 'none'; // Hide if currently visible
+        } else {
+            DeliveryList.style.display = 'flex'; // Show if currently hidden
+        }
+    });
+    MaintenanceToggle.addEventListener('click',function(){
+         if (MaintenanceList.style.display === 'flex') {
+            MaintenanceList.style.display = 'none'; // Hide if currently visible
+        } else {
+            MaintenanceList.style.display = 'flex'; // Show if currently hidden
         }
     });
 });
