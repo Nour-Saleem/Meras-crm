@@ -16,70 +16,147 @@ document.addEventListener('DOMContentLoaded', function() {
     const reportToggle=document.getElementById('reportToggle');
     const report_list=document.getElementById('report_list');
 
-    projectToggle.addEventListener('click', function() {
+    projectToggle.addEventListener('click', function(event) {
+        event.stopPropagation();
      if (projectList.style.display === 'flex') {
             projectList.style.display = 'none'; // Hide if currently visible
         } else {
-            projectList.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'flex'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
         
     });
 
-    PmoToggle.addEventListener('click',function(){
+    PmoToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (pmo_list.style.display === 'flex') {
             pmo_list.style.display = 'none'; // Hide if currently visible
         } else {
             pmo_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
 
 
-    PropertyToggle.addEventListener('click',function(){
+    PropertyToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (Property_list.style.display === 'flex') {
             Property_list.style.display = 'none'; // Hide if currently visible
         } else {
             Property_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
      
-    CustomerToggle.addEventListener('click',function(){
+    CustomerToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (customer_list.style.display === 'flex') {
             customer_list.style.display = 'none'; // Hide if currently visible
         } else {
             customer_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
 
-    developmentToggle.addEventListener('click',function(){
+    developmentToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (development_list.style.display === 'flex') {
             development_list.style.display = 'none'; // Hide if currently visible
         } else {
             development_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
 
-    markitingToggle.addEventListener('click',function(){
+    markitingToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (markiting_list.style.display === 'flex') {
             markiting_list.style.display = 'none'; // Hide if currently visible
         } else {
             markiting_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
 
-    pourchaseToggle.addEventListener('click',function(){
+    pourchaseToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (Purchases_list.style.display === 'flex') {
             Purchases_list.style.display = 'none'; // Hide if currently visible
         } else {
             Purchases_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            report_list.style.display = 'none';
         }
     });
 
-    reportToggle.addEventListener('click',function(){
+    reportToggle.addEventListener('click',function(event){
+        event.stopPropagation();
          if (report_list.style.display === 'flex') {
             report_list.style.display = 'none'; // Hide if currently visible
         } else {
             report_list.style.display = 'flex'; // Show if currently hidden
+            projectList.style.display = 'none'; 
+            pmo_list.style.display = 'none';
+            Property_list.style.display = 'none';
+            customer_list.style.display = 'none';
+            development_list.style.display = 'none';
+            markiting_list.style.display = 'none';
+            Purchases_list.style.display = 'none';
+          
         }
+    });
+
+       document.addEventListener('click', function () {
+            projectList.style.display = 'none';
+            pmo_list.style.display='none';
+            Property_list.style.display='none';
+            report_list.style.display='none';
+            Purchases_list.style.display='none';
+            markiting_list.style.display='none';
+            development_list.style.display='none';
+            customer_list.style.display='none';
+        
     });
 });
 
