@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const pourchaseToggle=document.getElementById('pourchaseToggle');
     const reportToggle=document.getElementById('reportToggle');
     const report_list=document.getElementById('report_list');
+    const projects_toggle=document.getElementById('projects_toggle');
+    const projects=document.getElementById('projects');
 
     projectToggle.addEventListener('click', function(event) {
         event.stopPropagation();
@@ -31,6 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
             report_list.style.display = 'none';
         }
         
+    });
+     projects_toggle.addEventListener('click',function(event){
+        event.stopPropagation();
+        if(projects.style.display === 'flex'){
+            projects.style.display= "none";
+        }
+        else{
+            projects.style.display= "flex";
+        }
     });
 
     PmoToggle.addEventListener('click',function(event){
@@ -156,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
             markiting_list.style.display='none';
             development_list.style.display='none';
             customer_list.style.display='none';
+            projects.style.display='none';
         
     });
 });

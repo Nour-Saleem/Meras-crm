@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const DeliveryToggle=document.getElementById('DeliveryToggle');
     const MaintenanceList=document.getElementById('MaintenanceList');
     const MaintenanceToggle=document.getElementById('MaintenanceToggle');
+    const projects_toggle=document.getElementById('projects_toggle');
+    const projects=document.getElementById('projects');
 
     projectToggle.addEventListener('click', function(event) {
         event.stopPropagation();
@@ -46,6 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         
+    });
+    projects_toggle.addEventListener('click',function(event){
+        event.stopPropagation();
+        if(projects.style.display === 'flex'){
+            projects.style.display= "none";
+        }
+        else{
+            projects.style.display= "flex";
+        }
     });
       
 
@@ -288,6 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
             markiting_list.style.display='none';
             development_list.style.display='none';
             customer_list.style.display='none';
+            projects.style.display='none';
         
     });
 });
