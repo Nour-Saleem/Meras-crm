@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const MaintenanceToggle=document.getElementById('MaintenanceToggle');
     const projects_toggle=document.getElementById('projects_toggle');
     const projects=document.getElementById('projects');
+    const client_account=document.getElementById('client_account');
+    const client_toggle=document.getElementById('client_toggle');
 
     projectToggle.addEventListener('click', function(event) {
         event.stopPropagation();
@@ -227,6 +229,16 @@ document.addEventListener('DOMContentLoaded', function() {
              MaintenanceList.style.display = 'none';
         }
     });
+    client_toggle.addEventListener('click',function(event){
+        event.stopPropagation();
+        if(client_account.style.display === 'flex'){
+           client_account.style.display = 'none'; 
+        }
+        else{
+            client_account.style.display = 'flex'
+        }
+
+    })
     ContractsToggle.addEventListener('click',function(event){
         event.stopPropagation();
          if (ContractsList.style.display === 'flex') {
@@ -300,6 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
             development_list.style.display='none';
             customer_list.style.display='none';
             projects.style.display='none';
+            client_account.style.display = 'none'
         
     });
 });

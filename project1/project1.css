@@ -402,6 +402,13 @@ padding: 1rem;
         letter-spacing: 0%;
         }
        }
+       .project_name{
+        padding: 0.5rem 1rem;
+        span{
+            font-weight: bold;
+
+        }
+       }
        .list_container{
         display: flex;
         width: 100%;
@@ -415,7 +422,7 @@ padding: 1rem;
             background-color: #F6EFEF;
             border-radius: 12px;
             width: 6rem;
-            height: 7rem;
+            height: 5rem;
             padding: 1rem;
             display: flex;
             flex-direction: column;
@@ -456,6 +463,9 @@ padding: 1rem;
         padding: 1rem;
         border-radius: 6px;
         background-color: #F5F5F5;
+        img{
+            cursor: pointer;
+        }
     }
     }
     #ContractsList{
@@ -550,5 +560,25 @@ padding: 1rem;
         border-radius: 6px;
         background-color: #F5F5F5;
     } 
+}
+#client_account{
+     position: absolute;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    row-gap: 1rem;
+    top: 25rem;
+    right: 53rem;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    
+    div{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 6px;
+        background-color: #F5F5F5;
+    }
 }
 }
